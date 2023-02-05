@@ -1,0 +1,15 @@
+scalar BigDecimal
+scalar LocalDateTime
+
+type Products {
+    id: ID!
+    title: String
+    isOnSales: Boolean
+    weight: Float
+    price: BigDecimal
+    dateCreated: LocalDateTime
+}
+
+type Query {
+    allProducts: [Products]!
+}
